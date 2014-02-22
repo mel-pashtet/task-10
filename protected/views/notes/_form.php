@@ -1,4 +1,4 @@
-<h1>Add comment</h1>
+<h1>"<?= Yii::app()->user->name; ?>" add comment</h1>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -14,11 +14,13 @@
 
 	<?php echo $form->errorSummary($model_comment); ?>
 
+	<?php if(Yii::app()->user->isGuest): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model_comment,'comment_author'); ?>
 		<?php echo $form->textField($model_comment,'comment_author'); ?>
 		<?php echo $form->error($model_comment,'comment_author'); ?>
 	</div>
+	<? endif ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model_comment,'comment_text'); ?>
@@ -34,7 +36,7 @@
 		<?php echo $form->hiddenField($model_comment,'author_id'); ?>
 		<?php echo $form->error($model_comment,'author_id'); ?>
 	</div>
-	<?php if(CCaptcha::checkRequirements()): ?>
+	<?php if(CCaptcha::checkRequirements() && Yii::app()->user->isGuest): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model_comment,'verifyCode'); ?>
 		<div>

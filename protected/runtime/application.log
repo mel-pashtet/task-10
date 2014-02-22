@@ -1,0 +1,542 @@
+2014/02/21 16:56:35 [info] [application]  no comment for clear 
+2014/02/21 16:56:48 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/21 16:56:54 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/21 16:57:02 [info] [application]  The comment is cleared 
+2014/02/21 16:57:34 [info] [application]  no comment for clear 
+2014/02/21 16:57:35 [info] [application]  no comment for clear 
+2014/02/21 16:57:36 [info] [application]  no comment for clear 
+2014/02/21 16:57:37 [info] [application]  no comment for clear 
+2014/02/21 16:57:38 [info] [application]  no comment for clear 
+2014/02/21 16:58:22 [info] [application]  no comment for clear 
+2014/02/22 12:29:48 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:33:10 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:33:16 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:33:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'указаний запис не знайдено' in M:\home\localhost\www\notes\protected\controllers\CommentController.php:57
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): CommentController->actionDelete()
+#1 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#10 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#11 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/index.php/comment/delete/57?current_id=17
+HTTP_REFERER=http://localhost/notes/index.php/notes/17
+---
+2014/02/22 12:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'указаний запис не знайдено' in M:\home\localhost\www\notes\protected\controllers\CommentController.php:57
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): CommentController->actionDelete()
+#1 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#10 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#11 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/index.php/comment/delete/57?current_id=17
+HTTP_REFERER=http://localhost/notes/index.php/notes/17
+---
+2014/02/22 12:34:26 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'указаний запис не знайдено' in M:\home\localhost\www\notes\protected\controllers\CommentController.php:57
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): CommentController->actionDelete()
+#1 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#10 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#11 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/index.php/comment/delete/55?current_id=17
+HTTP_REFERER=http://localhost/notes/index.php/notes/17
+---
+2014/02/22 12:34:44 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:35:10 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:38:31 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:40:07 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:40:46 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:43:59 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:45:33 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (140)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (164)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:45:46 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:45:50 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:51:25 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:52:13 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:52:19 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (52)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'указаний запис не знайдено' in M:\home\localhost\www\notes\protected\controllers\CommentController.php:58
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): CommentController->actionDelete()
+#1 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#10 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#11 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/index.php/comment/delete/76?current_id=17
+HTTP_REFERER=http://localhost/notes/index.php/notes/17
+---
+2014/02/22 12:53:42 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (53)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:53:47 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:54:19 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:54:24 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (53)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:55:02 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 12:57:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'указаний запис не знайдено' in M:\home\localhost\www\notes\protected\controllers\CommentController.php:58
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): CommentController->actionDelete()
+#1 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#10 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#11 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/index.php/comment/delete/79?current_id=17
+HTTP_REFERER=http://localhost/notes/index.php/notes/17
+---
+2014/02/22 12:57:50 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:16:11 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:18:25 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:21:59 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (53)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:22:11 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:37:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'text_notes.comment' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `comment`.
+2014/02/22 13:37:55 [error] [exception.CDbException] exception 'CDbException' with message 'The table "comment" for active record class "Comment" cannot be found in the database.' in C:\WebServers\home\localhost\www\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\WebServers\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Comment))
+#1 C:\WebServers\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\WebServers\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1817): CActiveRecord->getTableSchema()
+#3 C:\WebServers\home\localhost\www\notes\protected\commands\ClearcommCommand.php(8): CActiveRecord->deleteAll('comment_text LI...', Array)
+#4 [internal function]: ClearcommCommand->actionIndex()
+#5 C:\WebServers\home\localhost\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(ClearcommCommand), Array)
+#6 C:\WebServers\home\localhost\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\WebServers\home\localhost\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\WebServers\home\localhost\www\yii\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#9 C:\WebServers\home\localhost\www\yii\framework\yiic.php(33): CApplication->run()
+#10 C:\WebServers\home\localhost\www\notes\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#11 {main}
+---
+2014/02/22 13:42:07 [error] [system.db.CDbCommand] Не вдалося виконати CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'text_notes.notes' doesn't exist. Спроба виконати SQL-запит: SHOW FULL COLUMNS FROM `notes`.
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (159)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:42:07 [error] [exception.CDbException] exception 'CDbException' with message 'Таблиця "notes", яка згадана у записі active record класу "Notes", не знайдена у базі даних.' in M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Notes))
+#1 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1485): CActiveRecord->getTableSchema()
+#3 M:\home\localhost\www\notes\protected\controllers\NotesController.php(159): CActiveRecord->findByPk('17')
+#4 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionRead()
+#5 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('read')
+#14 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('notes/read')
+#15 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/notes/index.php/notes/17
+HTTP_REFERER=http://localhost/notes/index.php/notes/17
+---
+2014/02/22 13:42:20 [error] [system.db.CDbCommand] Не вдалося виконати CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'text_notes.notes' doesn't exist. Спроба виконати SQL-запит: SHOW FULL COLUMNS FROM `notes`.
+in M:\home\localhost\www\notes\protected\views\notes\uk\index.php (21)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (271)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 13:42:20 [error] [exception.CDbException] exception 'CDbException' with message 'Таблиця "notes", яка згадана у записі active record класу "Notes", не знайдена у базі даних.' in M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Notes))
+#1 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 M:\home\localhost\www\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 M:\home\localhost\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 M:\home\localhost\www\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 M:\home\localhost\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 M:\home\localhost\www\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#8 M:\home\localhost\www\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 M:\home\localhost\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 M:\home\localhost\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 M:\home\localhost\www\notes\protected\views\notes\uk\index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 M:\home\localhost\www\yii\framework\web\CBaseController.php(126): require('M:\home\localho...')
+#13 M:\home\localhost\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('M:\home\localho...', Array, true)
+#14 M:\home\localhost\www\yii\framework\web\CController.php(869): CBaseController->renderFile('M:\home\localho...', Array, true)
+#15 M:\home\localhost\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 M:\home\localhost\www\notes\protected\controllers\NotesController.php(271): CController->render('index', Array)
+#17 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionIndex()
+#18 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#27 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#28 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/notes/index.php/
+---
+2014/02/22 13:46:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TISTAMP
+) ENGINE = InnoDB' at line 5. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` text,
+	`password` text,
+	`last_login_time` TISTAMP
+) ENGINE = InnoDB.
+2014/02/22 13:47:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TISTAMP
+) ENGINE = InnoDB' at line 5. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` text,
+	`password` text,
+	`last_login_time` TISTAMP
+) ENGINE = InnoDB.
+2014/02/22 13:59:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'notes' already exists. The SQL statement executed was: CREATE TABLE `notes` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`notes_name` text,
+	`notes_value` text,
+	`notes_author` text,
+	`notes_update` DATETIME,
+	`author_id` int(11)
+) ENGINE = InnoDB.
+2014/02/22 13:59:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'notes' already exists. The SQL statement executed was: CREATE TABLE `notes` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`notes_name` text,
+	`notes_value` text,
+	`notes_author` text,
+	`notes_update` DATETIME,
+	`author_id` int(11)
+) ENGINE = InnoDB.
+2014/02/22 14:01:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'notes' already exists. The SQL statement executed was: CREATE TABLE `notes` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`notes_name` text,
+	`notes_value` text,
+	`notes_author` text,
+	`notes_update` DATETIME,
+	`author_id` int(11)
+) ENGINE = InnoDB.
+2014/02/22 14:13:37 [error] [system.db.CDbCommand] Не вдалося виконати CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'text_notes.notes' doesn't exist. Спроба виконати SQL-запит: SHOW FULL COLUMNS FROM `notes`.
+in M:\home\localhost\www\notes\protected\views\notes\uk\index.php (21)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (271)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:13:37 [error] [exception.CDbException] exception 'CDbException' with message 'Таблиця "notes", яка згадана у записі active record класу "Notes", не знайдена у базі даних.' in M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Notes))
+#1 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 M:\home\localhost\www\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 M:\home\localhost\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 M:\home\localhost\www\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 M:\home\localhost\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 M:\home\localhost\www\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#8 M:\home\localhost\www\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 M:\home\localhost\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 M:\home\localhost\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 M:\home\localhost\www\notes\protected\views\notes\uk\index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 M:\home\localhost\www\yii\framework\web\CBaseController.php(126): require('M:\home\localho...')
+#13 M:\home\localhost\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('M:\home\localho...', Array, true)
+#14 M:\home\localhost\www\yii\framework\web\CController.php(869): CBaseController->renderFile('M:\home\localho...', Array, true)
+#15 M:\home\localhost\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 M:\home\localhost\www\notes\protected\controllers\NotesController.php(271): CController->render('index', Array)
+#17 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionIndex()
+#18 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#27 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#28 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/notes/index.php/
+---
+2014/02/22 14:14:28 [error] [system.db.CDbCommand] Не вдалося виконати CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`text_notes`.`notes`, CONSTRAINT `fk_author_id` FOREIGN KEY (`author_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). Спроба виконати SQL-запит: INSERT INTO `notes` (`notes_author`, `author_id`, `notes_name`, `notes_value`, `notes_update`) VALUES (:yp0, :yp1, :yp2, :yp3, NOW()).
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (249)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:14:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не вдалося виконати SQL-запит: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`text_notes`.`notes`, CONSTRAINT `fk_author_id` FOREIGN KEY (`author_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `notes` (`notes_author`, `author_id`, `notes_name`, `notes_value`, `notes_update`) VALUES (:yp0, :yp1, :yp2, :yp3, NOW())' in M:\home\localhost\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 M:\home\localhost\www\notes\protected\controllers\NotesController.php(249): CActiveRecord->save()
+#3 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionCreate()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('notes/create')
+#14 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/notes/index.php/notes/create
+HTTP_REFERER=http://localhost/notes/index.php/notes/create
+---
+2014/02/22 14:15:07 [info] [application]  вихід з сайту 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (112)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:18:41 [info] [application]  вход на сайт 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (97)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:18:48 [info] [application]  замітка створена 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (250)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:18:55 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:19:00 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:19:04 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (53)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:19:08 [info] [application]  вихід з сайту 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (112)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:19:39 [info] [application]  вход на сайт 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (97)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:20:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: DROP TABLE `notes`.
+2014/02/22 14:22:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: DROP TABLE `users`.
+2014/02/22 14:22:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: DROP TABLE `users`.
+2014/02/22 14:26:47 [error] [system.db.CDbCommand] Не вдалося виконати CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'text_notes.notes' doesn't exist. Спроба виконати SQL-запит: SHOW FULL COLUMNS FROM `notes`.
+in M:\home\localhost\www\notes\protected\views\notes\uk\index.php (21)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (271)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:26:47 [error] [exception.CDbException] exception 'CDbException' with message 'Таблиця "notes", яка згадана у записі active record класу "Notes", не знайдена у базі даних.' in M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Notes))
+#1 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 M:\home\localhost\www\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 M:\home\localhost\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 M:\home\localhost\www\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 M:\home\localhost\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 M:\home\localhost\www\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#8 M:\home\localhost\www\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 M:\home\localhost\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 M:\home\localhost\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 M:\home\localhost\www\notes\protected\views\notes\uk\index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 M:\home\localhost\www\yii\framework\web\CBaseController.php(126): require('M:\home\localho...')
+#13 M:\home\localhost\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('M:\home\localho...', Array, true)
+#14 M:\home\localhost\www\yii\framework\web\CController.php(869): CBaseController->renderFile('M:\home\localho...', Array, true)
+#15 M:\home\localhost\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 M:\home\localhost\www\notes\protected\controllers\NotesController.php(271): CController->render('index', Array)
+#17 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionIndex()
+#18 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#27 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('notes/index')
+#28 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/notes/index.php/notes/index
+HTTP_REFERER=http://localhost/notes/index.php/notes/2
+---
+2014/02/22 14:27:53 [info] [application]  вихід з сайту 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (112)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:09 [info] [application]  вход на сайт 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (97)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:17 [info] [application]  замітка створена 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (250)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:22 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:27 [info] [application]  коментарій створений 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (141)
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (165)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:30 [info] [application]  коментарій видалений 
+in M:\home\localhost\www\notes\protected\controllers\CommentController.php (53)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:39 [info] [application]  замітка оновлена 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (101)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:28:50 [info] [application]  вихід з сайту 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (112)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:29:18 [error] [system.db.CDbCommand] Не вдалося виконати CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'text_notes.notes' doesn't exist. Спроба виконати SQL-запит: SHOW FULL COLUMNS FROM `notes`.
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (159)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:29:18 [error] [exception.CDbException] exception 'CDbException' with message 'Таблиця "notes", яка згадана у записі active record класу "Notes", не знайдена у базі даних.' in M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Notes))
+#1 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 M:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(1485): CActiveRecord->getTableSchema()
+#3 M:\home\localhost\www\notes\protected\controllers\NotesController.php(159): CActiveRecord->findByPk('1')
+#4 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionRead()
+#5 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('read')
+#14 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('notes/read')
+#15 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/notes/index.php/notes/1
+HTTP_REFERER=http://localhost/notes/index.php
+---
+2014/02/22 14:29:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'указаний запис не знайдено' in M:\home\localhost\www\notes\protected\controllers\NotesController.php:184
+Stack trace:
+#0 M:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(49): NotesController->actionRead()
+#1 M:\home\localhost\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 M:\home\localhost\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 M:\home\localhost\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 M:\home\localhost\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 M:\home\localhost\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 M:\home\localhost\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 M:\home\localhost\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 M:\home\localhost\www\yii\framework\web\CWebApplication.php(282): CController->run('read')
+#10 M:\home\localhost\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('notes/read')
+#11 M:\home\localhost\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 M:\home\localhost\www\notes\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/index.php/notes/1
+HTTP_REFERER=http://localhost/notes/index.php
+---
+2014/02/22 14:30:31 [info] [application]  вход на сайт 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (97)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:30:44 [info] [application]  замітка створена 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (250)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:30:50 [info] [application]  замітка створена 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (250)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:30:59 [info] [application]  замітка створена 
+in M:\home\localhost\www\notes\protected\controllers\NotesController.php (250)
+in M:\home\localhost\www\notes\index.php (13)
+2014/02/22 14:31:26 [info] [application]  вихід з сайту 
+in M:\home\localhost\www\notes\protected\controllers\SiteController.php (112)
+in M:\home\localhost\www\notes\index.php (13)

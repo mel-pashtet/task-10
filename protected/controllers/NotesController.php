@@ -66,8 +66,6 @@ class NotesController extends Controller
 		}
 			
 		$model=Notes::model()->findByPk($id);
-		if ($model->author_id === Yii::app()->user->id)
-		{
 			
 			if (isset($model))
 			{
@@ -77,12 +75,9 @@ class NotesController extends Controller
 				
 			}
 			else
-				throw new CHttpException(404,'Указанная запись не найдена');
+				throw new CHttpException(404,Yii::t('default','Not found this request'));
 				
-		}
-		else
-			throw new CHttpException(404,'ця дія доступна тільки для автора замітки');
-
+		
 		
 		
 	}
@@ -95,11 +90,6 @@ class NotesController extends Controller
 		}
 
 		$model=Notes::model()->findByPk($id);
-		if ($model->author_id === Yii::app()->user->id)
-		{
-			
-		
-		
 			if (isset($model))						
 			{
 				if (isset($_POST['Notes']))
@@ -119,16 +109,13 @@ class NotesController extends Controller
 			}
 			else
 			{
-				throw new CHttpException(404,'Указанная запись не найдена');
+				throw new CHttpException(404,Yii::t('default','Not found this request'));
 
 			}
 
-						$this->render('update', array('model'=>$model));
+		$this->render('update', array('model'=>$model));
 			
 
-		}
-		else
-			throw new CHttpException(404,'ця дія доступна тільки для автора замітки');
 		
 	
 	}
@@ -136,13 +123,21 @@ class NotesController extends Controller
 	{
 		$model_comment=new Comment;
 		$model->addComment($model_comment);
+		
+		if(!Yii::app()->user->isGuest)
+		{
+			$model_comment->comment_author = Yii::app()->user->name; 
+
+		}
 
 		if(isset($_POST['Comment']))
 		{
+			//print_r($_POST['Comment']);
 			
 		    $model_comment->attributes=$_POST['Comment'];
 		    $model_comment->save();
-		    Yii::app()->user->setFlash('commentSubmitted',"Ваш коментарій добавлений" );
+		    Yii::app()->cache->flush();
+		    Yii::app()->user->setFlash('commentSubmitted',"your comment added" );
 		    Yii::log(' коментарій створений ', 'info');
 		    $this->refresh();
 
@@ -170,7 +165,7 @@ class NotesController extends Controller
 			$model_comment=$this->createComment($model);
 			
 			
-			$dependency = new CDbCacheDependency('SELECT COUNT(*) FROM comment');
+			/*$dependency = new CDbCacheDependency('SELECT COUNT(*) FROM comment');
 			
 			$commentsDataProvider=new CActiveDataProvider(Comment::model()->cache(3600, $dependency), array(
     		'criteria'=>array(
@@ -181,12 +176,12 @@ class NotesController extends Controller
         	'pageSize'=>1,
       		),
     		));
-    		
-			$this->render('read', array('model'=>$model,  'commentsDataProvider'=>$commentsDataProvider, 'model_comment'=>$model_comment));
+    		*/
+			$this->render('read', array('model'=>$model,  'model_comment'=>$model_comment));
 
 		}
 		else
-			throw new CHttpException(404,'Указанная запись не найдена');
+			throw new CHttpException(404,Yii::t('default','Not found this request'));
 		
 		
 		

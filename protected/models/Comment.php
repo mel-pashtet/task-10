@@ -9,7 +9,7 @@
  * @property string $comment_text
  * @property integer $notes_id
  * @property integer $author_id
- * @property string $verifyCode
+ 
  * @property string $time_comment
  *
  * The followings are the available model relations:
@@ -18,6 +18,7 @@
  */
 class Comment extends CActiveRecord
 {
+	public $verifyCode;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -54,10 +55,15 @@ class Comment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('comment_author, comment_text, notes_id, author_id, verifyCode', 'required'),
+			array('comment_author, comment_text, notes_id, author_id', 'required'),
 			array('notes_id, author_id', 'numerical', 'integerOnly'=>true),
-			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
-			// The following rule is used by search().
+			 array(
+                'verifyCode',
+                'captcha',
+                // авторизованным пользователям код можно не вводить
+                'allowEmpty'=>!Yii::app()->user->isGuest || !CCaptcha::checkRequirements(),
+            ),
+            // The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, comment_author, comment_text, notes_id, author_id, verifyCode, time_comment', 'safe', 'on'=>'search'),
 		);

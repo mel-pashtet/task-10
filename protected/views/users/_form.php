@@ -8,10 +8,6 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'users-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -21,19 +17,18 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textArea($model,'username',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'username',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->textArea($model,'password',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->passwordField($model,'password',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 	<div class="row">
-    <?php echo $form->label($model,'password_repeat'); ?>
-    <?php echo $form->passwordField($model,'password_repeat',array('si
-ze'=>60,'maxlength'=>256)); ?>
+    <?php echo $form->labelEx($model,'password_repeat'); ?>
+    <?php echo $form->passwordField($model,'password_repeat',array('rows'=>6,'cols'=>50)); ?>
     <?php echo $form->error($model,'password_repeat'); ?>
 </div>
 

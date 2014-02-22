@@ -40,10 +40,12 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, password_repeat', 'required'),
+			array('password', 'compare'),
+			array('username, password', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, username, password, last_login_time', 'safe', 'on'=>'search'),
+			array('password_repeat', 'safe'),
 		);
 	}
 

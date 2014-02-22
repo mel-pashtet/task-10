@@ -1,8 +1,8 @@
 <div>
-  <h1>Ласкаво просимо в <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+  <h1>Ласкаво просимо в <i><?php echo CHtml::encode(Yii::t('default',Yii::app()->name)); ?></i></h1>
 <?php if(!Yii::app()->user->isGuest):?>
 <p>
-   "<?= Yii::app()->user->name; ?>" востаннє входив: <?php echo date( 'Y-m-d h:i:s',Yii::app()->user->lastLoginTime ); ?> 
+   "<?= Yii::app()->user->name; ?>" востаннє входив: <?php echo Yii::app()->dateFormatter->format('EEEE, dd-MMMM-yyyy HH:mm:ss', Yii::app()->user->lastLoginTime); ?> 
 </p>
 <?php endif;?>
 </div>
@@ -21,15 +21,15 @@ $this->widget('zii.widgets.CListView', array(
 ));
 ?>
 <div>
-    <p><?php echo Chtml::link('ДОБАВИТЬ ЗАПИСЬ', array('notes/create')); ?></p>
+    <p><?php echo Chtml::link('ДОБАВИТИ ЗАМІТКУ', array('notes/create')); ?></p>
 </div>
 <div align="center">
 
     <form align="center"action="search" method="get" name="searchform">
  
-      <h1><label for="search"> введите слово для поиска </label></h1>
-      <p><input type="text" id="search" name="search" size="50" placeholder = "ведите слово для поиска"
-      <p><input type="submit" value="искать"></p><br>
+      <h1><i><label for="search"> введіть слово для пошуку </label></i></h1>
+      <p><input type="text" id="search" name="search" size="50" placeholder = "введіть слово для пошуку"
+      <p><input type="submit" value="пошук"></p><br>
       
     </form>
 

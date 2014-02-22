@@ -9,41 +9,39 @@
 	<i><h3><?=$model->notes_update;?></h3></i>
 </div>
 <div align='left'>
-	<p><a href="<?=$this->createUrl('notes/update', array('id'=>$model->id));?>">update</a></p>
+<? if ($model->author_id === Yii::app()->user->id): ?>
+    
+    	
+  <p><a href="<?=$this->createUrl('notes/update', array('id'=>$model->id));?>">update</a></p>
 	<p><a href="<?=$this->createUrl('notes/delete', array('id'=>$model->id));?>">delete</a></p>
-	
+<? endif ?>	
+
+  
 </div>
+
 <?php if(Yii::app()->user->hasFlash('commentSubmitted') || Yii::app()->user->hasFlash('commentDelete') ): ?>
     <div class="flash-success" align='center'>
-      <?php echo Yii::app()->user->getFlash('commentSubmitted'); ?>
-      <?php echo Yii::app()->user->getFlash('commentDelete'); ?>
+      <?
+      $success_add =  Yii::app()->user->getFlash('commentSubmitted');
+      $success_delete = Yii::app()->user->getFlash('commentDelete');
+
+      ?>
+      <?php echo Yii::t('default', "$success_add"); ?>
+      <?php echo Yii::t('default', "$success_delete"); ?>
       
     </div>
-  <?php endif; ?>
+<?php endif; ?>
 <div>
-	<h1>list of comment</h1>
+	<?php $this->beginWidget('zii.widgets.CPortlet', array(
+  'title'=>'Recent Comments',
+  ));  
+    $this->widget('RecentComments', array('notesID'=>$model->id));
+    
+  $this->endWidget(); ?>
+
+
 </div>
 
-<div class="form">
-<?
-
-$this->widget('zii.widgets.CListView', array(
-    'dataProvider'=>$commentsDataProvider,
-    'ajaxUpdate'=>false,
-    'viewData'=>array(
-            'current_id'=>$model->id
-        ),
-
-    'itemView'=>'_view_comment',
-    'pager'=>array(
-    'class'=>'CLinkPager',
-    'header'=>false,
-    'maxButtonCount'=>'5',
-       
-
-     ),
-));
-?>
 <div>	 
   <?php $this->renderpartial('_form', array('model_comment'=>$model_comment)); ?>
 </div>

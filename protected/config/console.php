@@ -41,4 +41,14 @@ return array(
 			),
 		),
 	),
+	'params' => array(
+    'words' => array(
+        "100% satisfied",
+        "Buy direct",
+        "Click to remove",
+        "Dear friend",
+        "Free membership",
+         
+    )
+)
 );

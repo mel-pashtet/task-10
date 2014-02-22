@@ -7,9 +7,6 @@ $this->widget('zii.widgets.CListView', array(
     'class'=>'CLinkPager',
     'header'=>false,
     'maxButtonCount'=>'5',
-       
-    'prevPageLabel'=>'попередня',
-    'nextPageLabel'=>'наступна',
     
 
      ),

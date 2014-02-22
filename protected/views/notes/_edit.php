@@ -32,7 +32,7 @@
 
      
     <div class="row submit">
-        <?php echo CHtml::submitButton('save'); ?>
+        <?php echo CHtml::submitButton(Yii::t('default', 'save')); ?>
     </div>
  
 <?php $this->endWidget(); ?>

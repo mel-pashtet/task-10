@@ -12,7 +12,7 @@ return array(
   	'language' => 'uk',
 
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'ТЕКСТОВІ ЗАМІТКИ',
+	'name'=>'TEXT NOTES',
 	'defaultController' => 'notes',//контролер по умолчанию 
 
 	// preloading 'log' component
@@ -22,6 +22,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.widgets.*',
 	),
 
 	'modules'=>array(
@@ -48,7 +49,7 @@ return array(
 		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',// вибараем формат path 
-			'showScriptName'=>false,//скриваем імя вхідного скрипта
+			'showScriptName'=>true,//скриваем імя вхідного скрипта
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/read',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
